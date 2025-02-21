@@ -1,0 +1,15 @@
+---
+import sponsors from './datos.js'; 
+import './sponsor.css';
+---
+
+<div class="sponsors-container">
+  <div class="sponsors-box">
+    <div class="sponsors-title">Sponsors</div>
+    <div class="sponsors-grid">
+      {sponsors.map((sponsor) => (
+        <img src={sponsor.image} alt={sponsor.name} class="sponsor-logo" />
+      ))}
+    </div>
+  </div>
+</div>
