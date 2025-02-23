@@ -1,15 +1,58 @@
 ---
-const { name, image } = Astro.props;
+const { name, date, image } = Astro.props;
 ---
 
-<div class="containerArtista flex w-[325px] mt-10 mx-14 h-[250px] relative">
-    <img class="h-[225px]" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b0801599-5336-4f0a-a66d-a1c69eaa7c7c/d6ltwty-c53f06dd-7c2a-4ba0-aa10-b35e1bcd55ac.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IwODAxNTk5LTUzMzYtNGYwYS1hNjZkLWExYzY5ZWFhN2M3Y1wvZDZsdHd0eS1jNTNmMDZkZC03YzJhLTRiYTAtYWExMC1iMzVlMWJjZDU1YWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ts4Mg1skdgT2M35f2mx5_082vVOK4aBcEJTfml8CwTA" alt="david guetta"/>
+<div class="containerArtista flex w-[400px] h-[250px] relative justify-between items-center align-middle rounded-4xl shadow-xl p-4">
+    <img class="h-[210px] rounded-4xl" src=`${image}` alt="david guetta"/>
     <div class="flex flex-col align-middle items-center h-full">
-        <h1 class="mt-10 font-bold text-xl text-nowrap">David Guetta</h1>
-        <h2 class="mt-2 font-bold text-xl text-purple-300">24/06/2025</h2>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold  py-2 px-4 rounded-full absolute bottom-10">
+        <h1 class="mt-10 font-bold text-xl text-nowrap bg-gradient-to-r from-[#ca19b5] to-[#68b114] bg-clip-text text-transparent">{name}</h1>
+        <h2 class="mt-2 font-bold text-xl text-purple-300">{date}</h2>
+        <button class="purchase-btn">
             Purchase
-          </button>
+        </button>
     </div>
-    <img class="absolute top-0 size-10 left-[50%]" src="https://cdn-icons-png.flaticon.com/512/11087/11087445.png" alt="">
 </div>
+<style>
+
+.purchase-btn {
+    color: #ffffff;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 40px;
+    padding: 10px 20px;
+}
+.purchase-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.103);
+    transition: all 0.3s;
+}
+.purchase-btn:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.purchase-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 2px solid rgba(255,255,255,0.5);
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+}
+.purchase-btn:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+    cursor: pointer;
+}
+</style>
