@@ -2,8 +2,8 @@
 const { name, date, image } = Astro.props;
 ---
 
-<div class="containerArtista flex w-[400px] h-[250px] relative justify-between items-center align-middle rounded-4xl shadow-xl p-4">
-    <img class="h-[210px] rounded-4xl" src=`${image}` alt="david guetta"/>
+<div class="containerArtista flex max-[390px]:w-[300px] w-[400px] h-[250px] relative justify-between items-center align-middle rounded-4xl shadow-xl p-4">
+    <img class="h-[210px] max-[390px]:h-[150px] max-[390px]:mt-10 max-[390px]:p-2 rounded-4xl" src=`${image}` alt="david guetta"/>
     <div class="flex flex-col align-middle items-center h-full">
         <h1 class="mt-10 font-bold text-xl text-nowrap bg-gradient-to-r from-[#ca19b5] to-[#68b114] bg-clip-text text-transparent">{name}</h1>
         <h2 class="mt-2 font-bold text-xl text-purple-300">{date}</h2>

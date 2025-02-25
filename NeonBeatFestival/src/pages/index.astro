@@ -5,12 +5,17 @@ import Artists from "../data/Artistas.json";
 import Packs from "../data/Packs.json";
 import Pack from '../components/Pack.astro';
 import Countdown from "../components/Countdown.jsx";
+import Banner from '../components/Banner.astro';
 ---
 
 <LayoutMain>
+
+	<Banner />
+
 	<div>
 		<Countdown targetDate="2025-06-23T00:00:00" client:load />
 	</div>
+	
 	<div id="Paquetes">
 		<div class="flex items-center my-5 ml-30">
 			<h1 class="text-4xl">Packs</h1>
@@ -22,7 +27,6 @@ import Countdown from "../components/Countdown.jsx";
 			))}
 		</div>
 	</div>
-
 
 	<div id="Artistas">
 		<div class="flex items-center my-5 ml-30">
@@ -37,3 +41,4 @@ import Countdown from "../components/Countdown.jsx";
 	</div>
 	
 </LayoutMain>
+
