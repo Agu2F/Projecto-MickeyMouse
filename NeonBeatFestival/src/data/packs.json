@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Day Pass",
+        "precio": "500€",
+        "descripción": "¡Disfruta de un día completo en nuestro festival!",
+        "imagen": ""
+    },
+    {
+        "nombre": "Drunk Pack",
+        "precio": "6.000€",
+        "descripción": "¡Disfruta del festival al máximo con este pack que incluye acceso todos los días con barra libre!",
+        "imagen": "https://images.vexels.com/media/users/3/220727/isolated/preview/dc726a3fe54a3b8095aff163f023c52a-ilustracion-de-copas-de-champan.png"
+    }
+]
