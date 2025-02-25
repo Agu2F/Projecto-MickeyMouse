@@ -2,13 +2,13 @@
     {
         "nombre": "Day Pass",
         "precio": "500€",
-        "descripcion": "¡Disfruta de un día completo en nuestro festival!",
+        "descripcion": "Enjoy a full day of music, fun, and great vibes at our festival—unforgettable moments await!",
         "imagen": "https://cdn-icons-png.flaticon.com/512/722/722878.png"
     },
     {
         "nombre": "Drunk Pack",
         "precio": "6.000€",
-        "descripcion": "¡Disfruta del festival al máximo con este pack que incluye acceso todos los días con barra libre!",
-        "imagen": "https://images.vexels.com/media/users/3/220727/isolated/preview/dc726a3fe54a3b8095aff163f023c52a-ilustracion-de-copas-de-champan.png"
+        "descripcion": "Enjoy the festival to the fullest with this pack that includes access every day with open bar!",
+        "imagen": "https://static.vecteezy.com/system/resources/previews/024/097/543/non_2x/wine-cups-toasting-neon-free-png.png"
     }
 ]

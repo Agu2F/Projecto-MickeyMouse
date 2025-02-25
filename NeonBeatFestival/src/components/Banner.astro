@@ -1,5 +1,5 @@
 
-<div class="introBanner h-80 w-full flex justify-center items-center flex-col mb-20 max-[390px]:h-52">
+<div class="introBanner max-[390px]:introBannermd h-80 w-full flex justify-center items-center flex-col mb-20 max-[390px]:h-52">
     <h1 class=" p-4 text-7xl hover:scale-110 transition duration-300 ease-in-out cursor-pointer max-[390px]:text-4xl">BUY NOW</h1>
     <h2 class="mt-4">Running out!</h2>
 </div>
@@ -8,14 +8,28 @@
 
 	.introBanner{
 		box-shadow:
-	  inset 0 0 50px #fff,      /* inner white */
+	  inset 0 0 50px #fff,      /*inner white */
 	  inset 20px 0 80px #f0f,   /* inner left magenta short */
 	  inset -20px 0 80px #0ff,  /* inner right cyan short */
 	  inset 20px 0 300px #f0f,  /* inner left magenta broad */
 	  inset -20px 0 300px #0ff, /* inner right cyan broad */
-	  0 0 50px #fff,            /* outer white */
+	  0 0 50px #fff,            /*outer white */
 	  -10px 0 80px #f0f,        /* outer left magenta */
 	  10px 0 80px #0ff; 
 	}
+
+	@media (max-width: 390px) {
+    .introBanner {
+		box-shadow:
+	  inset 0 0 25px #fff,      /*inner white */
+	  inset 10px 0 40px #f0f,   /* inner left magenta short */
+	  inset -10px 0 40px #0ff,  /* inner right cyan short */
+	  inset 10px 0 150px #f0f,  /* inner left magenta broad */
+	  inset -10px 0 150px #0ff, /* inner right cyan broad */
+	  0 0 35px #fff,            /*outer white */
+	  -10px 0 160px #f0f,        /* outer left magenta */
+	  10px 0 160px #0ff; 
+    }
+  }
 
 </style>
