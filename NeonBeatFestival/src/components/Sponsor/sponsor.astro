@@ -1,0 +1,105 @@
+---
+import sponsors from './datos.js';
+---
+<div class="sponsors-container bg-gradient-to-b from-[#00006b] to-[#000033] p-16 flex justify-center relative overflow-hidden">
+  <div class="sponsors-box bg-gradient-to-br from-[#0f0064] to-[#1a0044] p-12 rounded-2xl w-full max-w-4xl border-4 border-[#c6c6c6] shadow-[0_0_30px_#ffff] relative">
+        <h2 class="sponsors-title neon-text" style="font-family: 'Bebas Neue', cursive;">Sponsors</h2>
+        <div class="sponsors-grid">
+            {sponsors.map((sponsor) => (
+                <img src={sponsor.image} alt={sponsor.name} class="sponsor-logo" />
+            ))}
+        </div>
+    </div>
+</div>
+
+<style>
+    .sponsors-container {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sponsors-box {
+      padding: 30px 40px; 
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .sponsors-title {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #ffff;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .sponsors-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Centra los elementos horizontalmente */
+      align-items: center;
+      gap: 100px;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+
+    .sponsor-logo {
+        max-width: 140px;
+        border-radius: 10%;
+        height: auto;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .sponsor-logo:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+
+    @media (max-width: 390px) {
+        .sponsors-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .sponsor-logo {
+            max-width: 100px;
+        }
+    }
+
+    @media (max-width: 390px) {
+        .sponsors-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .sponsor-logo {
+            max-width: 80px;
+        }
+
+        .sponsors-title {
+            font-size: 1.5rem;
+        }
+    }
+
+    @keyframes glow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+    body {
+        font-family: sans-serif;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
