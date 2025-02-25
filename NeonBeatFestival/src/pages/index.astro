@@ -2,9 +2,13 @@
 import Artist from '../components/Artist.astro';
 import LayoutMain from '../layouts/LayoutMain.astro';
 import Artists from "../data/Artistas.json";
+import Banner from '../components/Banner.astro';
 ---
 
 <LayoutMain>
+
+	<Banner />
+
 	<div id="Artistas">
 		<div class="flex items-center my-5 ml-30">
 			<h1 class="text-4xl">Artistas</h1>
@@ -18,3 +22,4 @@ import Artists from "../data/Artistas.json";
 	</div>
 	
 </LayoutMain>
+
