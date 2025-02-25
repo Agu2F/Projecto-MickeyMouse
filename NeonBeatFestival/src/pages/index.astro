@@ -2,12 +2,27 @@
 import Artist from '../components/Artist.astro';
 import LayoutMain from '../layouts/LayoutMain.astro';
 import Artists from "../data/Artistas.json";
+import Packs from "../data/Packs.json";
+import Pack from '../components/Pack.astro';
 ---
 
 <LayoutMain>
+	<div id="Paquetes">
+		<div class="flex items-center my-5 ml-30">
+			<h1 class="text-4xl">Packs</h1>
+			<img class="w-[5%]" src="https://static.vecteezy.com/system/resources/previews/024/088/053/non_2x/wine-cups-neon-style-free-png.png" alt="">
+		</div>
+		<div class="flex flex-wrap justify-center gap-15">
+			{Packs.map((pack) => (
+				<Pack nombre={pack.nombre} precio={pack.precio} descripcion={pack.descripcion} imagen={pack.imagen} />
+			))}
+		</div>
+	</div>
+
+
 	<div id="Artistas">
 		<div class="flex items-center my-5 ml-30">
-			<h1 class="text-4xl">Artistas</h1>
+			<h1 class="text-4xl">Artists</h1>
 			<img class="size-15" src="https://png.pngtree.com/png-clipart/20220812/ourmid/pngtree-podcast-headphones-neon-light-sign-png-image_6107856.png" alt="">
 		</div>
 		<div class="flex flex-wrap justify-center gap-15">
