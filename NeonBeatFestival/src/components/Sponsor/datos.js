@@ -1,11 +1,11 @@
 export default [
-    { name: "Cruzcampo", image: "../public/imagenes/cruzcampo.png" },
-    { name: "Five Guys", image: "../public/imagenes/FiveGuys.png" },
-    { name: "Coca-Cola", image: "../public/imagenes/CocaCola.png" },
-    { name: "Telepizza", image: "../public/imagenes/telepizza.png" },
-    { name: "Burger King", image: "../public/imagenes/burguerking.png" },
-    { name: "Netflix", image: "../public/imagenes/netflix.png" },
-    { name: "YouTube", image: "../public/imagenes/youtube.png" },
-    { name: "Comunismo", image: "../public/imagenes/comunismo.png" },
+    { name: "Cruzcampo", image: "/imagenes/cruzcampo.png" },
+    { name: "Five Guys", image: "/imagenes/FiveGuys.png" },
+    { name: "Coca-Cola", image: "/imagenes/CocaCola.png" },
+    { name: "Telepizza", image: "/imagenes/telepizza.png" },
+    { name: "Burger King", image: "/imagenes/kfc.png" },
+    { name: "Netflix", image: "/imagenes/netflix.png" },
+    { name: "YouTube", image: "/imagenes/youtube.png" },
+    { name: "Comunismo", image: "/imagenes/comunismo.png" },
 ];
 
